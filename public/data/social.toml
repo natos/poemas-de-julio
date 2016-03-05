@@ -1,0 +1,7 @@
+[links]
+[links.facebook]
+  name = "Facebook"
+  identifier = "facebook"
+  url = "https://www.facebook.com/julio.santolo"
+  icon = "fa fa-facebook-square"
+  weight = 1

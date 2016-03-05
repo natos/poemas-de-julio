@@ -1,0 +1,161 @@
+/* Styles for Heather - A Hyperminimal Jekyll Theme */
+
+/* BASSCSS Reset - http://jxnblk.github.io/basscss */
+body, h1, h2, h3, h4, h5, h6, dl, ol, ul, p,
+button, input, select, textarea {
+  margin: 0;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+  display: block;
+}
+
+
+body {
+  color: #333;
+  font-size: 100%;
+  line-height: 1.75;
+  font-family: 'Roboto', sans-serif;
+}
+body * {
+  box-sizing: border-box;
+}
+body::after {
+  content: "";
+  z-index: -1;
+  display: block;
+  position: fixed;
+  top:0; right: 0; bottom: 0; left: 0;
+  transform: translate3d(0, 0, 0);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('/assets/images/dmitry-sytnik.jpeg');
+  will-change: transform; // creates a new paint layer
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Kadwa', serif;
+  line-height: 1.25;
+}
+h1, .h1 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+h2, .h2, h3, .h3, h4, h5, h6 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+p, .p {
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+small, .small { font-size: 16px; }
+
+iframe { margin-bottom: 32px; }
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+@media screen and (min-width: 640px) {
+  h1, .h1 { font-size: 48px; }
+  h2, .h2 { font-size: 32px; }
+  p, .p   { font-size: 20px; }
+}
+
+a { color: #09c; text-decoration: none; }
+a:hover { color: #069; }
+h1 a { color: #333;}
+
+.wrap {
+  width: 100%;
+  padding: 8em 4em;
+  margin: 40% 0%;
+  padding: 2.5em 7% 5em 7%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-top: 1em solid #fff;
+}
+
+.m-0 { margin-top: 0; margin-bottom: 0; }
+.mb {
+  position: absolute;
+  top: 4em; right: 2em; left: 2em;
+}
+.mb,
+.mb a {
+  color: rgba(255, 255, 255, 0.75);
+  transition: all .1s ease-out;
+}
+.mb a:hover { color: rgba(255, 255, 255, 1); }
+.articles {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.article {
+  position: relative;
+}
+.article img { max-width: 100%; }
+.content img { max-width: 100%; }
+.center { text-align: center; }
+.fl { float: left; }
+.fr { float: right; }
+
+.small time { color: #999; }
+.about { margin-bottom: 5em; }
+.social-nav {
+    display: flex;
+    justify-content: center;
+}
+.social-nav-item {
+  font-size: 1em;
+  margin-right: 0;
+  transition: all .2s ease-out;
+  color: #333;
+  margin: 0 1em;
+}
+.social-nav-item:hover {
+  color: #000;
+}
+.social-nav-item-icon { font-size: 1.5em; }
+.social-nav-item-label { display: none; }
+
+.addthis_sharing_toolbox {
+  display: none;
+}
+@media screen and (min-width: 640px) {
+  .wrap {
+    padding: 5em 7% 5em 7%;
+  }
+  .m-0,
+  .social-nav-item-icon {
+    font-size: 3em;
+  }
+
+  .mb {
+    top: 5em; right: 5em; left: 5em;
+  }
+  .articles .article {
+    flex-basis: 45%;
+    margin-right: 5%;
+  }
+  .addthis_sharing_toolbox {
+    display: block;
+    height: 43px;
+  }
+  .addthis-smartlayers-mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .articles .article {
+    flex-basis: 30%;
+    margin-right: 3%;
+  }
+}
