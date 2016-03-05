@@ -1,0 +1,25 @@
+title = "Poemas de Julio"
+languagecode = "es_AR"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+builddrafts = false
+
+baseurl = "http://natos.github.io/poemas-de-julio"
+
+relativeurls = false
+canonifyurls = true
+watch = true
+
+[author]
+  name = "Julio Santolo"
+
+[params]
+  description = "Escritos en lunfardo criollo moderno"
+
+[blackfriday]
+  angledQuotes = true
+  fractions = false
+  plainIDAnchors = true
+  extensions = ["hardLineBreak"]
