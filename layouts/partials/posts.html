@@ -1,0 +1,20 @@
+{{ $baseurl := .Site.BaseURL }}
+<main class="posts">
+  {{ range .Data.Pages }}
+    <article class="{{ .Section }}">
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <p>{{ .Description }}</p>
+      <nav>
+        {{if .Params.tags }}on
+          {{ range $index, $tag := .Params.tags }}
+            <!--<a href="{{$baseurl}}tags/{{ $tag | urlize }}/">#{{ $tag }}</a>,-->
+            {{ $tag }},
+          {{ end }}
+        {{end}}
+      </nav>
+      <p class="small">
+          <a href="{{ .Permalink }}">Read More »</a>
+      </p>
+    </article>
+  {{ end }}
+</main>

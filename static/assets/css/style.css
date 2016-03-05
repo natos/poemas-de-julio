@@ -1,0 +1,135 @@
+/* Styles for Heather - A Hyperminimal Jekyll Theme */
+
+/* BASSCSS Reset - http://jxnblk.github.io/basscss */
+body, h1, h2, h3, h4, h5, h6, dl, ol, ul, p,
+button, input, select, textarea {
+  margin: 0;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+  display: block;
+}
+
+
+body {
+  color: #333;
+  font-size: 100%;
+  line-height: 1.75;
+  font-family: 'Droid Serif', serif;
+}
+body * {
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 { line-height: 1.25; }
+h1, .h1 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+h2, .h2, h3, .h3, h4, h5, h6 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+p, .p {
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+small, .small { font-size: 16px; }
+
+iframe { margin-bottom: 32px; }
+footer { text-align: center; }
+
+@media screen and (min-width: 640px) {
+  h1, .h1 { font-size: 48px; }
+  h2, .h2 { font-size: 32px; }
+  p, .p   { font-size: 20px; }
+}
+
+a { color: #09c; text-decoration: none; }
+a:hover { color: #069; }
+h1 a { color: #333;}
+
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5em 20%;
+  margin: 40% 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+.m-0 { margin-top: 10%; margin-bottom: 0; }
+.mb {
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  font-size: 3em;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
+}
+.mb::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+  opacity: .9;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: url('/poemas-de-julio/assets/images/julio.jpg');
+  z-index: -2;
+}
+.mb p::before,
+.mb p::after {
+  content: " ~ ";
+}
+/*
+.mb::before {
+  content: "\f103";
+  display: block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  z-index: 900;
+  left: 50%;
+  bottom: 5%;
+  transform: translate3d(0, -50%, 0);
+  opacity: .9;
+  color: #333;
+  text-align: center;
+  font-size: 1em;
+}
+*/
+.post { margin-bottom: 96px; }
+.post img { max-width: 100%; }
+
+.article { margin-bottom: 5rem; }
+
+.center { text-align: center; }
+.fl { float: left; }
+.fr { float: right; }
+
+.small time { color: #999; }
+.about { margin-bottom: 5em; }
+.social-nav {
+    maring: 0 auto;
+}
+.social-nav-item {
+  margin-right: 1em;
+  transition: all .2s ease-out;
+  color: #333;
+}
+.social-nav-item:hover {
+  transform: scale3d(1.5, 1.5, 2);
+}
+.social-nav-item-icon { font-size: 1.5em; }
+.social-nav-item-label { display: none; }
