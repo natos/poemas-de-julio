@@ -60,6 +60,25 @@ h1 a { color: #333;}
   margin: 45% 0;
   background-color: rgba(255, 255, 255, 1);
 }
+.wrap::before {
+  /* angle-double-down icon */
+  content: "\f103";
+  /* angle-double-down icon end */
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  /* icon end */
+  position: absolute;
+  z-index: 900;
+  left: 50%;
+  bottom: 4em;
+  font-size: 2em;
+  color: #ffffff;
+  text-align: center;
+  transform: translate3d(0, -50%, 0);
+}
 .m-0 { margin-top: 10%; margin-bottom: 0; }
 .mb {
   position: fixed;
